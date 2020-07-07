@@ -1,0 +1,32 @@
+<h1>Modificar</h1>
+
+<form action="@Url.Action("ModificarData", "Home")" method="post">
+    <div class="form-group">
+        <label >Id</label>
+        <input type="text" name="id" value="@ViewBag.usuario.id" class="form-control">
+    </div>
+    
+    <div class="form-row">
+        <div class="form-group col-md-6 mb-3">
+            <label>Nombre</label>
+            <input type="text" name="nombre" value="@ViewBag.usuario.nombre" class="form-control">
+        </div>
+        <div class="form-group col-md-6 mb-3">
+            <label >Apellido</label>
+            <input type="text" name="apellido" value="@ViewBag.usuario.apellido" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6 mb-3">
+            <label >profesion</label>
+            <input type="text" name="profesion" value="@ViewBag.usuario.profesion" class="form-control">
+        </div>
+        <div class="form-group col-md-6 mb-3">
+            <label >email</label>
+            <input type="text" name="email" value="@ViewBag.usuario.email" class="form-control">
+        </div>
+    </div>
+    <input type="submit" value="Modificar" class="btn btn-primary">
+
+</form>
